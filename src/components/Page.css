@@ -1,0 +1,116 @@
+body {
+  background-color: black;
+}
+
+#form-main {
+  /* max-width: 80%; */
+  margin: 5vw;
+  color: blue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+#adventure {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-right: 30px;
+  margin-top: 50px;
+  color: blanchedalmond;
+}
+
+.content {
+  line-height: 25px;
+  text-align: justify;
+  margin-right: 150px;
+  color: blanchedalmond;
+}
+
+.button {
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 800;
+}
+.button:hover {
+  transform: translateX(5px);
+  transition: 0.5s;
+  letter-spacing: 8px;
+  /* font-size: 10px; */
+  color: tomato;
+  cursor: pointer;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 20px;
+  font-size: 25px;
+  color: blanchedalmond;
+}
+.social-icons .fab:hover {
+  transform: translate(2px);
+  transition: 1s;
+  color: tomato;
+  cursor: pointer;
+}
+.social-icons .fab {
+  margin-right: 10px;
+  color: blanchedalmond;
+}
+
+.menu-icon {
+  color: red;
+  z-index: 1;
+  position: relative;
+  right: 0;
+  transition: 0.5s;
+}
+.menu-icon.move {
+  position: relative;
+  right: 130px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.menu-bar.active {
+  width: 170px;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  line-height: 40px;
+  background-color: beige;
+  transition: 0.5s;
+}
+.menu-bar {
+  display: none;
+}
+.menu-bar ul li {
+  list-style: none;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.menu-bar ul li:hover {
+  cursor: pointer;
+  color: navy;
+  font-weight: 900;
+  font-style: italic;
+}
